@@ -1,0 +1,11 @@
+libgdiplus: Libgdiplus (Mono's .NET GDI+ comptible API)
+libgdiplus:
+libgdiplus: Libgdiplus is the Mono library that provide a GDI+ comptible
+libgdiplus: API on non-Windows operating systems.
+libgdiplus:
+libgdiplus:
+libgdiplus:
+libgdiplus:
+libgdiplus:
+libgdiplus:
+libgdiplus: Packaged by Georgi D. Sotirov <gdsotirov@dir.bg>
