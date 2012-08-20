@@ -46,7 +46,7 @@ CXXFLAGS=$SLKCFLAGS \
             --prefix=/usr \
             --sysconfdir=/etc \
             --localstatedir=/var \
-            --libdir=/usr/lib \
+            --libdir=/usr/lib${LIBDIRSUFFIX} \
             --enable-shared=yes \
             --enable-static=no || exit 2
 
