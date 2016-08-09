@@ -4,11 +4,11 @@
 # Written by Georgi D. Sotirov <gdsotirov@dir.bg>
 #
 
-. ../slack-package.conf
+. ../../slack-package.conf
 
 NAME=libgdiplus
 VERSION=2.4.2
-BUILD=1
+BUILD=${BUILD:-1}
 ARCH=${ARCH:-i486}
 
 TMP=${TMP:-/tmp}
@@ -46,7 +46,7 @@ CXXFLAGS=$SLKCFLAGS \
             --prefix=/usr \
             --sysconfdir=/etc \
             --localstatedir=/var \
-            --libdir=/usr/lib \
+            --libdir=/usr/lib${LIBDIRSUFFIX} \
             --enable-shared=yes \
             --enable-static=no || exit 2
 
