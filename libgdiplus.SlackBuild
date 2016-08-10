@@ -19,13 +19,13 @@
 #
 # Visit SlackPack at http://sotirov-bg.net/slackpack/
 #
-# $Id: libgdiplus.SlackBuild,v 1.5 2016/08/09 17:32:21 gsotirov Exp $
+# $Id: libgdiplus.SlackBuild,v 1.6 2016/08/10 07:06:33 gsotirov Exp $
 #
 
 . ../../slack-package.conf
 
 NAME=libgdiplus
-VERSION=2.10.9
+VERSION=3.12
 BUILD=${BUILD:-1}
 ARCH=${ARCH:-i486}
 
@@ -51,7 +51,7 @@ mkdir -p $PKG
 
 # Extract the source
 cd $TMP
-tar -xvf $CWD/$NAME-$VERSION.tar.bz2 || exit 3
+tar -xvf $CWD/$NAME-$VERSION.tar.?z* || exit 3
 cd $SRC
 fix_source
 
